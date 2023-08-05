@@ -25,5 +25,5 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 java -jar target/${NAME}-${VERSION}.jar
 sleep 60
-echo jps | grep "war" | awk '{print $1}' > .pidfile
+jps | grep "war" | awk '{print $1}' > .pidfile
 set +x
