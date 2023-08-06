@@ -26,4 +26,5 @@ set -x
 java -jar target/${NAME}-${VERSION}.jar &
 sleep 60
 echo $! > .pidfile
+chmod +x ./jenkins/scripts/kill.sh
 set +x
